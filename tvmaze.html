@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TV Maze</title>
+    <link
+    href="https://bootswatch.com/4/superhero/bootstrap.css"
+    rel="stylesheet">
+  </head>
+  <body>
+    <main class="container">
+
+    <h1>TV Maze</h1>
+
+    <form class="form-inline" id="searchForm">
+      <div class="form-group row">
+      <div class="input-group">
+        <input class="form-control" 
+          id="searchForm-term" 
+          value="bletchley" 
+          type="search" required>
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="submit">Go!</button>
+        </div>
+      </div>
+      </div>
+    </form>
+
+    <section id="showsList" class="row">
+    </section>
+
+    <section style="display: none" id="episodesArea">
+      <h2>Episodes</h2> 
+      <ul id="episodesList">
+      </ul>
+    </section>
+  </main>  
+
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="http://unpkg.com/axios/dist/axios.js"></script>
+    <script src="tvmaze.js"></script>
+  </body>
+</html>
